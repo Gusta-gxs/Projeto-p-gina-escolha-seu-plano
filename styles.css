@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #05080a;
+}
+
+.header__logo {
+    padding-left: 50px;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav ul{
+    display: flex;
+    gap: 16px;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header__nav ul li {
+    font-size: 18px;
+    padding: 16px;
+}
+
+.header__nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.diff {
+    background-color: #cbe300;
+    border-radius: 5px;
+}
+
+.diff a {
+    color: black;
+    text-decoration-color: black;
+    pointer-events: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 80px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cards {
+    background-color: rgb(39, 38, 43);
+    flex: 1;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px -6px black;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: #cbe300 solid 1px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.cards p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.cards-price {
+    font-size: 34px;
+}
+
+.cards-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    padding-bottom: 40px;
+    flex-grow: 1;
+}
+
+.cards-list__items {
+    color: #acabab;
+}
+
+.cards-list__items::marker {
+    color: #cbe300;
+}
+
+.button {
+    background-color: #cbe300;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.button:hover {
+    outline: #cbe300 solid 1px;
+    background-color: transparent;
+    color: #fff;
+}
